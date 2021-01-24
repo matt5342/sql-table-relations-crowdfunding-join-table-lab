@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/mattsewell/Development/code/phase_1/sql/sql-table-relations-crowdfunding-join-table-lab/lib/Crowdfunding2.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="840"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainpledges"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE projects (id INTEGER PRIMARY KEY, title TEXT, category TEXT, funding_goal INTEGER, start_date TEXT, end_date TEXT);
+CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);
+CREATE TABLE pledges (id INTEGER PRIMARY KEY, amount INTEGER, user_id INTEGER, project_id INTEGER);
 INSERT INTO users (id, name, age) VALUES (1, 'Finnebar', 17), (2, 'Bear', 6), (3, 'Iguana', 4), (4, 'Alex', 33),
 (5, 'Amanda', 24), (6, 'Sophie', 24), (7, 'Rosey', 9), (8, 'Victoria', 23), (9, 'Franz', 100), (10, 'Hermione', 30),
 (11, 'Voldemort', 90), (12, 'Marisa', 24), (13, 'Swizzle', 4), (14, 'Sirius', 36), (15, 'Albus', 113), (16, 'Squid', 5),
@@ -46,3 +49,4 @@ INSERT INTO pledges (id, amount, user_id, project_id) VALUES
 (28, 90.00, 17, 9),
 (29, 230.00, 16, 6),
 (30, 450.00, 15, 5);
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
